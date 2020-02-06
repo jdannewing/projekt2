@@ -5,14 +5,53 @@
 }
 
 #container {
-    grid-template-areas: 
-    ''
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% auto auto 15%;
+    grid-template-rows: 15% auto auto 15%;
+    grid-template-areas:
+    'as as as as'
+    'hd hd hd hd'
+    'nv nv nv nv'
+    'ft ft ft ft';
+   
 }
 
 body {
-    background-image: url("bg.jpg");
+    background-image: url("back.jpg");
 }
 
 .navStyle {
     text-align: center;
+    font-size: 35px;
+}
+
+a {
+    margin: 0px 40px;
+}
+
+aside {
+    grid-area: as;
+    background-color: pink;
+}
+
+header {
+    grid-area: hd;
+    background-color: aqua;
+}
+
+img {
+    position: relative;
+    left: 50%;
+    top: 80px;
+}
+
+nav {
+    grid-area: nv;
+    background-color: purple;
+}
+
+footer {
+    grid-area: ft;
+    background-color: red;
 }
