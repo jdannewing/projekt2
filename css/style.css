@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0px;
+}
+
 #container {
     display: grid;
     height: 100vh;
+    width: 100vw;
     grid-template-columns: 15% auto auto 15%;
-    grid-template-rows: 15% auto auto 15%;
+    grid-template-rows: 15% 45% 25% 15%;
     grid-template-areas:
     'as as as as'
     'hd hd hd hd'
@@ -23,11 +28,24 @@ body {
 
 .navStyle {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
+    margin: 15px;
 }
 
 a {
     margin: 0px 40px;
+}
+
+#namn {
+    font-size: 100px;
+    position: relative;
+    top: 32%;
+    left: 20%;
+    margin: 0px;
+    padding: 0px;
+    width: 620px;
+    
+
 }
 
 aside {
@@ -38,17 +56,21 @@ aside {
 header {
     grid-area: hd;
     background-color: aqua;
+    
 }
 
 img {
     position: relative;
-    left: 50%;
-    top: 80px;
+    top: -120px;
+    left: 65%;
+
 }
+
 
 nav {
     grid-area: nv;
     background-color: purple;
+
 }
 
 footer {
