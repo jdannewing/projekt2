@@ -8,6 +8,8 @@ body {
     margin: 0px;
 }
 
+
+/* main */
 #container {
     display: grid;
     height: 100vh;
@@ -23,17 +25,22 @@ body {
 }
 
 body {
-    background-image: url("back.jpg");
+    background-image: url('../img/back2.png');
+    background-size: cover;
 }
 
 .navStyle {
     text-align: center;
     font-size: 40px;
+    font-weight: 100;
     margin: 15px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 a {
-    margin: 0px 40px;
+    margin: 0px 20px 0px 0px;
+    text-decoration: none;
+    color: black;
 }
 
 #namn {
@@ -44,36 +51,83 @@ a {
     margin: 0px;
     padding: 0px;
     width: 620px;
+    font-family: 'Quicksand', sans-serif;
     
 
 }
 
 aside {
     grid-area: as;
-    background-color: pink;
+ 
 }
 
 header {
     grid-area: hd;
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+   
     
 }
 
 img {
     position: relative;
-    top: -120px;
+    top: -128px;
     left: 65%;
 
 }
 
 
 nav {
-    grid-area: nv;
-    background-color: purple;
+    grid-area: nv;   
+    display: flex;
+    position: absolute;
+    right: 5px;
 
 }
 
 footer {
     grid-area: ft;
-    background-color: red;
+ 
+}
+
+/* works */
+#containerworks {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 15% auto auto 50%;
+    grid-template-rows: 15% 35% 35% 15%;
+    grid-template-areas:
+   'hd hd hd hd'
+   'mn mn mn mn'
+   'mn mn mn mn'
+   'ft ft ft ft';
+}
+
+#namn2 {
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    
+    
+}
+
+#img2 {
+    height: 70px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: flex;
+}
+
+main {
+    grid-area: mn;
+    background-color: white;
+    opacity: 70%
+
+}
+
+.navStyle2 {
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+
 }
