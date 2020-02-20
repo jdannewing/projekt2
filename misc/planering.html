@@ -129,9 +129,11 @@
             <td>8</td>
             <td>
             <!-- Vad görs på lektionen vecka 8? -->
+            Works-grid + flex
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 8? -->
+            Fixa problem angående flex
             </td>
         </tr>
 
@@ -139,6 +141,7 @@
             <td>9</td>
             <td>
             <!-- Vad görs på lektionen vecka 9? -->
+            Fixa problem angående flex och grid
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 9? -->
@@ -216,6 +219,31 @@
 
     <h3>Lektion vecka 8</h3>
     <!-- Fyll på med dokumentation här. -->
+    Jag har idag fixat min bakgrundsbild. Problemet var att jag tidigare skrivit "url('back2.png')" utan att jag angett vart bilden kan hittas.<br>
+    Detta löste vi med hjälp av att backa i sökningen av bilden genom att skriva "url('../img/back2.png')". Den hade letat efter bilden i css-mappen,<br>
+    men eftersom den inte låg där hittades den inte. Bakgrundsbilden var däremot alldeles för liten innan, så den förstorades vid exporteringen från Illustrator.<br>
+    <br>
+    Förutom att fixa med bakgrundsbilden har jag försökt att bygga upp layouten för de andra sidorna, alltså "works", "about me" och "qualifications".<br>
+    Dessa tre kommer att ha samma layout med olika innehåll, men detta innebär att jag endast behöver bygga upp ett grid för dessa tre.<br>
+    Problem som förekom var att element såsom text och bilder inte ville lägga sig innanför föräldrar-elementets gränser.<br>
+    Jag antog att det berodde på "position: relative", men även när jag tagit bort detta lade de sig istället på andra ställen. Jag kollade ifall det fanns<br>
+    en marginal som ställde till det, men det hade den inte och eftersom jag redan från början bestämt att allt i CSS-filen från början skulle ha en<br>
+    marginal på 0px. Efter rådgivning gav jag alla elementen som skulle ligga längst upp, alltså i min header, "display: flex" för att se om det<br>
+    skulle lösa det. Trots detta ville den inte fungera när vi ville särskilja vart min nav skulle ligga i headern (åt höger), och slutade med att<br>
+    vi använde "position: absolute" och "right: 5px", då den annars lade sig brevid loggan och texten. Hur detta ska lösas är oklart, men genom att<br>
+    lägga en flex i en flex hade det nog fungerat, men det hade blivit mer komplicerat. Jag vill inte heller behålla "position:", eftersom skalningen<br>
+    blir fel när man minskar hemsidan.<br>
+    <br>
+    På den mera positiva sidan lade jag till en vit bakgrund med en opacitet på 70% på min main. Här skall jag lägga till mina verk så att de är fokuspunkten,<br>
+    men så att bakgrundsbilden fortfarande syns igenom så att den inte försvinner. Det som tidigare varit en header och nav i min grid har i den nya containern<br>
+    bytts ut mot mains, eftersom dessa passade mer angående vad innehållet kommer vara. Dessutom är det viktigt att det är något annat<br>
+    då ifall jag annars läser in mitt header-innehåll där bilderna skall vara egentligen. Även fontbyte gjorde jag från de som finns i Visual Studio Code<br>
+    till en Google Font. Den är en sans serif, så den är anpassad till skärm samtidigt som den är minimalistisk likt logotypen.<br>
+    <br>
+    Nästa gång skall jag försöka lösa problemet angående flex och mina element, eftersom det krävs vid omskalning. Om det inte fungerar kanske jag<br>
+    börjar om på nytt, med en ny grund. Jag är rädd för att det finns någonting i grunden jag byggt upp som påverkar resten av projektet,<br>
+    och om det inte löses kommer det endast att skapa flera problem i framtiden när jag fortsätter bygga på hemsidan.<br>
+
 
     <h3>Lektion vecka 9</h3>
     <!-- Fyll på med dokumentation här. -->
