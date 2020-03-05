@@ -151,7 +151,10 @@ main {
 
 .bilder:hover {
     opacity: 1;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
+    outline-width: 2em;
+    outline-style: solid;
+    outline-color: rgb(255, 221, 235);
 
 }
 
@@ -159,20 +162,31 @@ main {
     grid-area: ft2;
 }
 
+
 /*about me*/
 
 #square2 {
+    position:relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: rgba(255,255,255,0.7);
     height: 100%;
     font-family: 'Quicksand', sans-serif;
     font-size: larger;
-    padding: 50px;
+    padding: 1%;
 }
 
 #profilbild {
     display: flex;
-    height: 80%;
-    justify-self: flex-end;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#litemysigtext {
+    background-color: white;
+    width: 50%;
+    margin: 0% 1% 0% 0%;
 }
