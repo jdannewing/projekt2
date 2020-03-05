@@ -152,9 +152,11 @@
             <td>10</td>
             <td>
             <!-- Vad görs på lektionen vecka 10? -->
+            Bygga upp mindre hemsidorna
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 10? -->
+            Fixa med animationer och småting
             </td>
         </tr>
 
@@ -162,9 +164,11 @@
             <td>11</td>
             <td>
             <!-- Vad görs på lektionen vecka 11? -->
+            Göra klart alla mindre hemsidor (delsidor), göra en kontaktsida? Mobile
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 11? -->
+            Småpill, göra klart mobile och skalbarhet
             </td>
         </tr>
 
@@ -172,9 +176,11 @@
             <td>12</td>
             <td>
             <!-- Vad görs på lektionen vecka 12? -->
+            Utvärdering och/eller göra klart mobile/skalbarhet ifall inte färdigt innan
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 12? -->
+            Utvärdering
             </td>
         </tr>
 
@@ -257,6 +263,30 @@
 
     <h3>Lektion vecka 10</h3>
     <!-- Fyll på med dokumentation här. -->
+    Idag höll jag på med att fixa alla bilder som finns på "works"-sidan. Detta gjorde jag med hjälp av flex, som jag tidigare inte förstod skulle sitta på föräldern<br>
+    när man ville ange vart och hur de olika elementen (bilderna) skulle positioneras gentemot varandra.<br>
+    Dessa bilderna drog jag ner opaciteten på i deras "standardläge", så att de inte skulle ta för mycket uppmärksamhet.<br>
+    Tanken är att ifall en besökare gillar en bild så skall hen ha möjlighet att hålla över bilden, vilket gör att den går från 50% till 100% i opacitet.<br>
+    Detta implementerade jag med hjälp av :hover och opacity: 0.5; & opacity: 1;. En smådetalj som märktes var att man inte kan ange opaciteten med procent.<br>
+    Man måste här använda sig av decimaltal, vilket var en ny lärdom.<br>
+    <br>
+    Det som bilderna legat i tidigare har varit i själva "main", vilket jag idag bytte till att ligga inom en div inom main. Anledningen till detta var<br>
+    att jag inte ville ändra på main-ens bestämningar, utan ville göra ändringar i storlek mm. på ett eget objekt som är den vita rektangeln.<br>
+    Denna kunde jag sedan sätta många bestämningar på, såsom att det skulle vara ett flex-objekt, för att alla bilder skulle kunna positioneras fint.<br>
+    <br>
+    Detsamma gjorde jag på "about me" sidan, som jag fyllde med en likadan vit div med som ett flex-objekt. Denna vita boxen håller nu både bilden på mig,<br>
+    samt en till vit rektangel som innehåller texten OM mig. En div med text i en annan div helt enkelt. Alla dessa objekt var flex, vilket gjorde det enkelt att<br>
+    få lika stort mellanrum mellan dem på den ytan de hade. Däremot ville de inte positioneras jämnt horisontellt, vilket gjorde att jag fick använda en padding<br>
+    innanför den stora vita lådan, så att alla objekten började från samma plats. Jag gav profilbilden en width på 50% eftersom jag ville att bilden skulle ta upp<br>
+    halva ytan innanför den vita div-en, och textrutan innanför div-en resterande 50%. Dock lade de sig då tätt intill varandra i "centrumet", vilket fixades med en<br>
+    lika stor margin (1%) som paddingen för den stora div-en hade.<br>
+    <br>
+    När jag ändrade storlek på bilden som var för stor märkte jag att jag inte kunde sätta en smalare width än vad bilden var för att den då blev förvrängd.<br>
+    Detta problemet löste jag med hjälp av "object-fit: cover;", vilket liknar när man sätter en bakgrundsbild. På det sättet blev inte bilden förvrängd när jag satt<br>
+    en width på 50%. Jag använde också "overflow: hidden;" så att den lilla biten som uteblev av profilbilden på grund av marginen på textrutan skulle försvinna, så att<br>
+    båda delarna verkligen fick lika mycket yta. Däremot funderar jag på ifall bildens yta bör vara mindre, då den är mörkare än textrutan och väger mer visuellt.<br>
+    <br>
+    Nästa gång jag arbetar, utanför eller under lektion, så skall jag få klart "sid-sidorna" och hur de är uppbyggda. Därefter blir det fokus på animationer.<br>
 
     <h3>Lektion vecka 11</h3>
     <!-- Fyll på med dokumentation här. -->
