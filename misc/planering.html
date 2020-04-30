@@ -290,17 +290,136 @@
 
     <h3>Lektion vecka 11</h3>
     <!-- Fyll på med dokumentation här. -->
+    Det som jag gjorde under denna lektionen var att bygga upp min sida för "qualifications". Detta innebar att jag byggde upp själva boxen där all information skulle ligga,<br>
+    men också hur de skulle sorteras på hemsidan (i uppdelade kolumner) beroende på vilken typ av innehåll det var. För att göra detta skapade jag tre olika unordered lists.<br>
+    Inom dessa listor skapade jag p-taggar för att kunna designa listans rubrik, för att tydliggöra vad respektive lista innehåller.<br> 
+    Med p-taggarna gav jag dem en underline så att de blev lättare att se, samt gjorde texten större. Det som jag gjorde denna gången var att göra allt till flex.<br>
+    Flex krävs sen när jag kommer vilja göra detta skalbart, samt att måtten som används är t.ex procent eller vh/vw. Detta gjorde jag så att det skulle bli lättare sen<br>
+    när jag skulle utveckla hur hemsidan såg ut för mobil.<br>
+    <br>
+    Inför nästa lektion har jag mycket kvar att göra. Jag måste ju göra om det så att det är skalbart för alla sidor, bygga upp hur det ser ut för mobil samt skapa min<br>
+    applicering av javascript, vilket jag tänkt göra i form av en hamburgarmeny eftersom layouten för min navigeringsbar på mobil inte annars blir bra. Texten för navigeringen,<br>
+    hade blivit alldeles för liten ifall jag behöll den layouten, vilket hade gjort det svårt då området som tar en till en viss delsida hade varit rätt liten.<br>
+    Hamburgarmenyn skall alltså göra det mindre plottrigt samt göra det enklare att trycka runt på hemsidan. Navigationen är inte alltid synlig, och fokuset hamnar på sidans innehåll.
+
 
     <h3>Lektion vecka 12</h3>
     <!-- Fyll på med dokumentation här. -->
+    Denna veckan har jag gjort en del. Först och främst började jag byta containers på delsidorna eftersom jag insåg att de skulle behöva olika layouts i mobilläge.<br>
+    Att byta dessa innebar att jag också behövde kopiera de "inställningar" jag satt på huvudcontainern, så att jag inte förlorade den layouten som jag från början<br>
+    anpassat till alla delsidor, verkar det som. Detta gjorde det svårare att navigera i mitt css-dokument, eftersom det började att fyllas på med inställningar<br>
+    som var lite olika varandra. Jag ville att hemsidan skulle vara skalbar, och jag insåg att när man minskade fönstret så förminskades bland annat inte text på<br>
+    min index-sida (huvud/förstasidan). På grund av detta fick jag ändra layouten och måtten en del, vilket tog mycket tid eftersom de olika delarna i mitt gridsystem<br>
+    inte ville hamna rätt i relation till varandra med avstånd, utifrån vad jag önskade. Jag kunde inte heller använda mig av position: absolute, vilket fungerade i<br>
+    laptop/dator-läge. När jag minskade fönstret så försvann därmed innehåll, och när jag använde mig av position: relative nådde det inte heller mina förväntningar.<br>
+    När jag minskade fönstret så ökade avståndet mellan min navigeringsbar och namnet och bilden (headern). Tyvärr har jag inte kunnat lösa detta, men jag har en idé<br>
+    om att det skulle teoretiskt sätt gå att lösa med javascript? Att man med hjälp av det kan få avståndet mellan dem kan minska/öka beroende på fönstrets bredd?<br>
+    <br>
+    Som sagt anpassade jag min layout utefter hur bred en telefon är, vilket jag satte som mindre än 840px i bredd (ipads och sånt också kanske). Detta innebar en hel<br>
+    del arbete i min css-fil, då jag fick klippa och klistra med alla "små-delar" såsom t.ex "header {.." eftersom det i en ny storlek (@media screen only and ()) nollställdes.<br>
+    Detta tog en LÅNG TID. När jag blev klar med allt jag behövde fixa angående css i mobilläge skulle jag också implementera javascript i form av min hamburgarmeny.<br>
+    Jag tog inspiration från den meny vi gjort i repl.it tidigare, vilket gjorde att jag sparade tid. Däremot fick jag ändra hur menyn skulle placeras på hemsidan,<br>
+    eftersom flex-inställningen och "justify-content: flex-end" inte fungerade. Därför anpassade jag mig med hjälp av position: relative, där jag valde att den<br>
+    skulle vara en ett visst avstånd ifrån övre högerkanten med hjälp av right: x%. 
 
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
+    <img src="kontrast/Kontrastblue.png" width="300px"><img src="kontrast/Kontrastpink.png" width="300px"><br>
+    Mina tester för kontrast var att jag testade fontfärgen (svart) mot de mest vanligt förekommande färgerna i bakgrunden, vilket var ljusblått och ljusrosa.<br>
+    Enligt contrastchecker så fungerade kombinationen bra och passerade alla testen.<br>
+    <br>
+    <b>Chrome:</b><br>
+    <img src="Chrome/Skärmavbild 2020-03-24 kl. 19.31.40.png" width="500px"> <img src="Chrome/Skärmavbild 2020-03-24 kl. 19.33.04.png" width="500px"><br>
+    <img src="Chrome/Skärmavbild 2020-03-24 kl. 19.32.12.png" width="200px"> <img src="Chrome/Skärmavbild 2020-03-24 kl. 19.32.31.png" width="200px">
+    <img src="Chrome/Skärmavbild 2020-03-24 kl. 19.32.46.png" width="200px"> <img src="Chrome/Skärmavbild 2020-03-24 kl. 19.32.56.png" width="300px"><br>
+    <br>
+    <b>Safari:</b><br>
+    <img src="Safari/Skärmavbild 2020-03-24 kl. 19.34.00.png" width="200"> <img src="Safari/Skärmavbild 2020-03-24 kl. 19.34.20.png" width="200px"> <img src="Safari/Skärmavbild 2020-03-24 kl. 19.48.39.png" width="200px"><br>
+    <img src="Safari/Skärmavbild 2020-03-24 kl. 19.48.17.png" width="500px"><br>
+    <br>
+    <b>iPhone 8:</b><br>
+    <img src="Telefon/IMG_4817 2.PNG" width="200px"> <img src="Telefon/IMG_4818 2.PNG" width="200px"> <img src="Telefon/IMG_4820 2.PNG" width="200px"> <img src="Telefon/IMG_4821 2.PNG" width="200px"> <img src="Telefon/IMG_4822 2.PNG" width="200px"><br>
+    <br>
+    Det skiljer sig på det sätten att på desktop, när man drar ihop fönstret, så ser det ut som att hamburgarmenyn är en bit ifrån högerkanten. På telefonen syns detta<br>
+    däremot inte, vilket var det jag utgick ifrån. När man istället på datorn hade det så att det inte fanns ett mellanrum så försvann en bit av menyn på telefonen. <br>
+    På grund av detta prioriterade jag att det skulle vara utan mellanrum på telefonen, eftersom man sällan drar ihop ett fönster så mycket på en dator och därmed sällan<br>
+    ser det. Även som en skillnad mellan Safari (både på dator och telefon) så vill inte mittenstrecket från hamburgarmenyn försvinna när den blir klickad på.<br>
+    Anledningen till detta vet jag inte, eftersom javascriptet fungerar på allt förutom just det sträcket där dess opacitet går ner till noll. Min gissning är att hur man<br>
+    anger opacitet i CSS i Safari är annorlunda från hur det är i Chrome. Men ja, detta ledde till att istället för att få ett kryss efter att ha öppnat menyn, inuti Safari,<br>
+    så får man en stjärna. Blev ändå fint :) Resten av allting var mycket likt, antagligen eftersom de följer ungefär samma regler angående CSS och att jag använt skalbara mått.<br>
+    Eftersom jag angett koden att följa viss mängd pixelbredd och inte olika sökmotorer (vilket jag inte vet ifall det går), så spelar det ingen roll vilken sökmotor som används.<br>
 
     <h2>5. Utvärdering</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
+    <b>Dåligt</b><br>
+    Det som var sämre i mitt arbete var främst att jag överestimerade mängden saker jag kunde få gjort under tiden vi fått. På grund av detta blev schemat ganska tajt,<br>
+    och det blev väldigt stressigt i mitt egna huvud samt att få saker att fungera på hemsidan. Det var många småsaker som tog lång tid, t.ex att jag implementerade flex mitt i<br>
+    arbetet. Detta snurrade till det eftersom mycket placerades då fel (en selektor som finns på flera av sidorna var flex = den inte passade som "flex" på en av dem).<br>
+    Jag fick därför byta selektorer och specifiera dem, då flex annars hade hjälpt lite (för att få en fin skalbarhet med positionerade objekt) men skapat fler problem.<br>
+    Som konsekvens av tillägget av flex så hamnade objekt fel, och jag fick antingen byta selektornamn, ändra i min designplan eller lägga till margins/paddings för att hålla<br>
+    sakerna på den plats jag planerat. Däremot var det svårt att lägga till en margin eftersom den också var tvungen att vara skalbar. Trotsa att jag har ett bättre ögonmått<br>
+    när man mäter i pixlar så kunde jag inte använda detta som ett mått, eftersom en pixelmängd har en viss storlek på en enhet och en annan på en annan enhet. T.ex ifall jag placerade<br>
+    någonting med en margin så att den på datorn nådde övre högerhörn fint, men på en telefon sitter denna sak i mitten på skärmen. Som resultat fick jag därmed ändra mina pixelmått<br>
+    till skalbara mått som anpassar sig efter enhetens skärm med hjälp av "%".<br>
+    <br>
+    Min tanke angående detta är att just ett enda litet problem, alltså tillägg av flex, påverkade stora delar av mitt tidsupplägg. Jag föll snabbt efter i min tidsplanering och stressade.<br>
+    Jag visste att detta var ett problem jag var tvungen att klara mig igenom. Eftersom det handlade om basstrukturen på min/mina hemsidor kunde jag därför inte fortsätta med annat innehåll<br>
+    då jag på detta vis hade kanske skapat fler problem som hade gjort lösningen av flex-problemet svårare. Jag fick inte tid till att skapa en femte hemsida, som jag från början hade<br>
+    velat ha med på grund av för lite tid. Däremot låg ett annat problem i att jag tog för mycket tid åt att planera hemsidan, både på papper och digitalt för att få en bild över<br>
+    hur den skulle se ut samt skapade en bakgrund i Illustrator som tog tid att göra. Dock gjordes detta innan mitt problem med flex kom upp. Visst, jag kunde inte veta att jag skulle<br>
+    få sådana problem senare i arbetet, men någonting jag hade kunnat göra är att inkludera en budget-lektion i mitt schema. Detta är någonting som hade hjälpt med mitt tidsproblem,<br>
+    hade också kunnat vara att minska tiden jag lade åt planeringen till en lektion max, då jag inte bara annars slösar tid utan också skapar en idé av någonting jag med min kunskap inte<br>
+    har möjlighet att skapa ännu. Någonting annat som jag skall ta med mig till ett framtida hemsidobygge är att definitivt inkludera flex från början. Antalet problem som uppstod av att<br>
+    inte gjorde detta har gett mig en rejäl läxa. Dessutom hade jag kunnat spenderat mer tid hemma på att försöka få ihop min hemsida.<br>
+    <br>
+    Jag hade också velat implementera mer JavaScript i mitt projekt, men trots att jag ville det hade jag inte inkluderat det i mitt schema. Allt JavaScriptsarbete hamnade därför utanför skoltid.<br>
+    Ett generellt tajtare schema med mycket mer som skall göras under varje lektion hade varit en generell förbättring. Däremot är det inte möjligt att arbeta på den konstant, så det behövs<br>
+    en balans mellan hur mycket som skall göras för ett schema som man klarar samtidigt som det är bra i relation med deadlinen. Någonting som jag hade kunnat göra är att bygga upp en<br>
+    projektplansmall. Alltså att jag gör en lista på det som jag behöver bestämma/göra i vilken ordning. T.ex steg 1: Skissa ihop en idé, dokumentera, bestäm grid/flex eller båda, bygg grid/flex.<br>
+    Steg 2: bygg upp basstruktur.. mm. Detta hade minskat min konstanta förvirring, trots mitt schema, i vad jag specifikt skulle göra. Jag hade alltid en "vague" idé om vad jag höll på med<br>
+    som hjälp av schemat vi gjort, men jag behövde ändå försöka planera mitt i arbetet för att jag specifikt inte visst vad jag gjorde/skulle göra. En mall hade därför hjälpt mig alltid veta vad<br>
+    som skall göras just då. Är jag klar med allt i steg 1? Dags att gå över till steg 2.<br>
+    <br>
+    Specifikt för innehållsförbättring så finner jag det irriterande att i safari webbläsaren så vill inte mittenlinjen i hamburgarmenyn försvinna. Jag vet inte om det har med att göra att<br>
+    safari har andra regler angående JavaScript, men jag tycker det är konstigt eftersom de andra linjerna fungerar som de ska och att hela scriptet fungerar i andra webbläsare.<br>
+    Min tanke är i alla fall att jag behöver kanske läsa på lite i vilka regler som fungerar i vilka webbläsare, men detta skulle ta väldigt lång tid och kan nog inte memoreras genom endast läsning.<br>
+    För att förstå måste jag också sätta detta i praktik också, men det skulle också ta lång tid innan det "sitter". Linjen är i vilket fall ett litet problem jag skulle viljat fixa, men jag<br>
+    vet inte hur. En annan sak med hamburgarmenyn är att på datorn så är den inte placerad längst högerkanten, utan sitter en bit ut. Jag förstår inte heller varför det är så. Jag försökte fixa det<br>
+    med flex, justify-content osv, men det såg alltid fel ut på telefonen om det såg rätt ut på datorn vise versa. Jag kunde inte använda position: relative heller, då den då permanent var placerad<br>
+    på det stället jag satt den på = ingen skalbarhet ifall jag inte vill förlora menyn. Därför prioriterade jag att menyn såg bra ut på telefonen, eftersom hamburgarmenyn är menad att visas i just<br>
+    den storleken och inte tekniskt sätt för datorns layout. Min gissning är att ifall jag också hade haft bättre koll på min flex på hemsidan så hade detta gått bättre. Jag hade nog lättare kunnat<br>
+    hitta vad som stod fel till, eftersom jag efter att ha lagt till flex inte riktigt visste VAD som var flex-objekt och inte. Ett annat problem jag också tror ligger i min "flex-miss" är mina<br>
+    sociala medier ikoner. Under ett flertal tillfällen har jag sett att de placeras fel ifall jag startar om hemsidan, alltså att deras flex-regler (att vara centrerade) inte fungerar<br>
+    Ibland fungerar den och de hamnar korrekt. Men ibland gör de inte det och sprids ut på ett ologiskt sätt. Min gissning här är att jag av misstag angett en regel till någon selektor som<br>
+    är kopplade till ikonerna (img, a eller nåt id/class), som får hemsidan att reagera konstigt. Någonting jag då hade kunnat göra i framtiden är därför att dubbelkolla allt i CSS-filen<br>
+    och hålla koll på flex såklart.<br>
+    <br>
+    <b>Bra</b><br>
+    Det som jag tyckte jag gjorde bra var att jag bland annat hade spenderat en stor del av min tid på att skissa och planera eftersom jag på grund av det hade en väldigt tydlig bild över vad jag<br>
+    skulle skapa. Jag kunde lätt tänka mig efter att ha en tydlig BILD över resultatet vad som skulle krävas i koden för att få det som jag ville (minus flex hehe). Jag faller ofta in i en grop<br>
+    när jag inte har en tydlig bild/idé av vad jag skall göra och det tar därför mycket längre tid att nå mitt resultat. Därför kändes det bra både i arbetet samt i mitt egna huvud att inte känna<br>
+    stress över att jag inte riktigt visste vad jag höll på med eller vad jag skulle göra (däremot var det ju lite så ändå pga för lite detaljplanering, men det förbättrade det).<br>
+    Trots att flex-problemet har lett till mycket extra arbete som jag lagt blod, svett och tårar på (kanske inte blod men men), så har det inte bara varit ont. Jag har ju till följd av problemet<br>
+    lärt mig mycket om t.ex vilka konsekvenser som man kan få ifall man väljer att ändra på någonting så stort en bit in i projektet. Dessutom har jag lärt mig mer och känner mig mycket säkrare<br>
+    inom hanteringen av flex, då jag under problemen fått testa och se vad som fugnerar och inte. Jag fick kolla på många tutorials för vägledning, eller för att få ett hum om vad jag skulle kunna testa<br>
+    vilket har vidgat mina kunskaper inom denna del i webbutveckling. Innan projektet kände jag mig inte särskilt säker inom flex alls, och ville hellre arbeta med grid som vi gjort i projekt1.<br>
+    Men i detta projektet fick jag testa på att använda både grid OCH flex samtidigt. Tekniskt sätt hade det kanske varit bättre och mindre frustrerande ifall jag gjort hemsidan med endast flex,<br>
+    men jag tror att de fördelar jag fick med att använda grid samtidigt var användbart och smart i detta projektet eftersom jag hade många småsaker jag ville placera rätt.<br>
+    Att ha grid-et som en linjeguide (som jag t.ex kunde använda för att ett objekt alltid ska hålla ett visst avstånd till med hjälp av flex) har definitivt gjort det enklare i att placera saker korrekt.<br>
+    Däremot var det också mycket svårare av anledningen att jag inte alltid höll koll på vilka objekt som låg i vilket element (ex. en div i headern) och därför inte visste vilka mått flex-en gick utifrån.<br>
+    <br>
+    Någonting annat jag tyckte om i mitt arbete och är nöjd över är att jag lyckades dokumentera varenda lektion. Det må låta lite löjligt, men som en mästerprokrastinerare var jag rädd för att jag<br>
+    skulle skjuta upp dokumenteringen. Men jag tog lärdomen jag fick från förra projektet (när jag inte visste att vi ens skulle dokumentera) och gjorde det ändå. När jag skrev utvärderingen i projekt1<br>
+    kom jag inte ihåg mycket av det jag gjort, och fick hjälp av att jag kommit ihåg vad jag gjort under lektionerna med hjälp av mina "pushar" till GitHub. Hade jag inte pushat hade jag inte vetat<br>
+    vad jag skulle skrivit på min dokumentation. Jag ville inte gå igenom samma sak igen, alltså att gå igenom varje push för att sen komma ihåg någonting från flera veckor sedan.<br>
+    Det var inte bara dumt att behöva tänka tillbaka, utan jag dessutom skrev inte mycket i mina dokumentationer eftersom jag inte kunde komma ihåg allt och alla detaljer från den tiden.<br>
+    Så på grund av detta valde jag då att dokumentera varje lektion samma dag som vi haft lektion, för att inte glömma vad jag gjort i projektet.<br>
+    <br>
+    Sist av allt tycker jag om min slutprodukt. Den är långt ifrån perfekt med mycket småsaker (och även större) som säkerligen hade kunnat förbättras. Men vid slutet på dagen har jag ändå gjort den,<br>
+    och den är relativt lik min skiss jag haft från början. Det är en hemsida jag velat skapa ett tag, så nu har jag i alla fall en bas jag kan bygga utifrån ifall jag skulle vilja förbättra den.<br>
+    Jag har lärt mig mycket under projektets gång, tycker jag. Så jag avslutar inte bara kursen med en hemsida jag är nöjd med, utan också en hel del ny kunskap inom ämnet! :D
 
 </body>
 </html>

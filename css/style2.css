@@ -181,6 +181,8 @@ main {
     height: 50vh;
     opacity: 0.5;
     margin: 1%;
+    transition-duration: 1s;
+    transform: scale(1);
 }
 
 .bilder:hover {
@@ -632,6 +634,7 @@ p {
     }
     
     #mysigtext {
+        font-size: 4vw;
         height: 100%;
         width: 100%;
         text-decoration: none;
